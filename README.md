@@ -34,3 +34,9 @@ you may see something like:
 In Toolbar: Structure > Blocks 
 Go to the disabled section, find Random Words, choose “Content” from the popup menu and it will appear in the main content section.
 
+## Step 3
+Make it so that the words are actually random
+
+Edit random.module with contents of tag [step03](https://github.com/ultrasaurus/drupal_module_example/tree/step03)
+
+
