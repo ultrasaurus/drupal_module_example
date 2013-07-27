@@ -27,9 +27,14 @@ function random_block_info() {
  */
 function random_block_view($name) {
  
-  if ($name == 'random_words') { 
-    $content = 'bottle socks mountain';
- 
+  if ($name == 'random_words') {
+    $words = array("bottle", "socks", "mountain", "invention", "money", "sky", "door", "shake", "room", "lemonade", "waiter", "cable", "stairs", "grass", "hunter");
+    $some_keys = array_rand($words, 3);
+    $content = "";
+    foreach ($some_keys as $index => $key) {
+  	$content = $content . $words[$key] . " ";
+    }   
+    
     $block = array(
       'subject' => t('Random Words'),
       'content' => $content,
