@@ -1,0 +1,8 @@
+<?php
+// $Id: random module Exp $
+
+// keep the module name consistent throughout
+global $moduleName;
+$moduleName = "random";
+
+?>
