@@ -8,3 +8,33 @@
 global $moduleName;
 $moduleName = "random";
 
+/**
+ * Implements hook_block_info().
+ */
+function random_block_info() {
+  $blocks = array();
+ 
+  $blocks['random_words'] = array(
+    'info' => t('Random Words'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+ 
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function random_block_view($name) {
+ 
+  if ($name == 'random_words') { 
+    $content = 'bottle socks mountain';
+ 
+    $block = array(
+      'subject' => t('Random Words'),
+      'content' => $content,
+    );
+ 
+    return $block;
+  }
+}
