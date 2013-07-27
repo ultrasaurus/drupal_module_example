@@ -1,8 +1,10 @@
 <?php
-// $Id: random module Exp $
+/**
+ * @file
+ * The random module provides a block with some random words.
+ */
 
 // keep the module name consistent throughout
 global $moduleName;
 $moduleName = "random";
 
-?>
