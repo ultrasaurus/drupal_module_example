@@ -1,0 +1,3 @@
+name = Random Form Module
+description = Form for generating random words
+core = 7.x
